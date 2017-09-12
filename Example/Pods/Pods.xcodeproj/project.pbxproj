@@ -14,7 +14,7 @@
 		52624211A4B6FA86B8CE55FEAD54F48F /* Pods-WeatherAPI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 097F463CA99D5C934037A7E7C6DD7043 /* Pods-WeatherAPI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D4E08F76A207E0F1B0B32D86BBD271F /* Pods-WeatherAPI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 017D03C3C4AB63678E74994B521D4CC3 /* Pods-WeatherAPI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96D4F3749CC08EFCEBA68425A22A92B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		BBE477CE9A1C9D7857FCA81C24FBAAD4 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F76618505D37AEF4BA51941381CED5 /* ReplaceMe.swift */; };
+		BBE477CE9A1C9D7857FCA81C24FBAAD4 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F76618505D37AEF4BA51941381CED5 /* WeatherAPI.swift */; };
 		C3D9728C66AA0F6A768671BB5D1C8B9B /* Pods-WeatherAPI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBDC3BADB2ACFB8148EAA91FAA9E49 /* Pods-WeatherAPI_Example-dummy.m */; };
 		D22AE7426820025C475C039C41C2FF56 /* Pods-WeatherAPI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 755096284AA4158BDE0052EF5FF00413 /* Pods-WeatherAPI_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -33,7 +33,7 @@
 		017D03C3C4AB63678E74994B521D4CC3 /* Pods-WeatherAPI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherAPI_Tests-umbrella.h"; sourceTree = "<group>"; };
 		097F463CA99D5C934037A7E7C6DD7043 /* Pods-WeatherAPI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherAPI_Example-umbrella.h"; sourceTree = "<group>"; };
 		0A848271BC982FCB69F2D2704376165B /* Pods-WeatherAPI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherAPI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2674403072DBC4888EC368E6014C1DAB /* WeatherAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WeatherAPI.framework; path = WeatherAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2674403072DBC4888EC368E6014C1DAB /* WeatherAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4873FFE297026C8D600A1E23ABE89CC9 /* Pods-WeatherAPI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherAPI_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		48C37BBDE018F2A7C1BDB8DFBD8FF99F /* Pods-WeatherAPI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherAPI_Example-frameworks.sh"; sourceTree = "<group>"; };
 		48CBDC3BADB2ACFB8148EAA91FAA9E49 /* Pods-WeatherAPI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherAPI_Example-dummy.m"; sourceTree = "<group>"; };
@@ -45,19 +45,19 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		755096284AA4158BDE0052EF5FF00413 /* Pods-WeatherAPI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherAPI_Tests-dummy.m"; sourceTree = "<group>"; };
 		759ED577CDFB501CD2D7F72D60FDC8DA /* Pods-WeatherAPI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherAPI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		77215CA49CAC48E5177F2A3A59B0A8ED /* Pods_WeatherAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherAPI_Tests.framework; path = "Pods-WeatherAPI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A255AAD482024C9B5127D148CA87874 /* Pods-WeatherAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WeatherAPI_Tests.modulemap"; sourceTree = "<group>"; };
-		8D2CA4C6174A711BACE3D81D3C2D3D38 /* WeatherAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WeatherAPI.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		77215CA49CAC48E5177F2A3A59B0A8ED /* Pods_WeatherAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherAPI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A255AAD482024C9B5127D148CA87874 /* Pods-WeatherAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WeatherAPI_Tests.modulemap"; sourceTree = "<group>"; };
+		8D2CA4C6174A711BACE3D81D3C2D3D38 /* WeatherAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WeatherAPI.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95CE85E5C10B482BB1B596E9ED252F94 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4F76618505D37AEF4BA51941381CED5 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = WeatherAPI/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		A4F76618505D37AEF4BA51941381CED5 /* WeatherAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeatherAPI.swift; path = WeatherAPI/Classes/WeatherAPI.swift; sourceTree = "<group>"; };
 		AA3BF9689B25B820085C1E5516F7690F /* Pods-WeatherAPI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherAPI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AC4BF4E0B4FC126C6AA6293811431C77 /* Pods-WeatherAPI_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherAPI_Tests-resources.sh"; sourceTree = "<group>"; };
 		ACF1594FE509348705AFEB797BBC94A3 /* Pods-WeatherAPI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherAPI_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B7E0DC44E5F661FA15412FB66E7A471F /* Pods_WeatherAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WeatherAPI_Example.framework; path = "Pods-WeatherAPI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E0DC44E5F661FA15412FB66E7A471F /* Pods_WeatherAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD33E2BD7CC7B539E0AB7E0CE33F79E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6A862A97C8263EDF1FB8381CF488725 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7CE2FBF5ACCAA54DE5302E6D23720C1 /* Pods-WeatherAPI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WeatherAPI_Example.modulemap"; sourceTree = "<group>"; };
+		C7CE2FBF5ACCAA54DE5302E6D23720C1 /* Pods-WeatherAPI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WeatherAPI_Example.modulemap"; sourceTree = "<group>"; };
 		D22869C098B34798062AD19BFD7CFED6 /* WeatherAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WeatherAPI-dummy.m"; sourceTree = "<group>"; };
 		D4BA72213F93B1FC05BDC5DC8598A918 /* Pods-WeatherAPI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherAPI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DF9A959AA85F01A224EC4BE4EBF83C82 /* Pods-WeatherAPI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherAPI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		6A47BF13C457AD03497E10364D56821B /* WeatherAPI */ = {
 			isa = PBXGroup;
 			children = (
-				A4F76618505D37AEF4BA51941381CED5 /* ReplaceMe.swift */,
+				A4F76618505D37AEF4BA51941381CED5 /* WeatherAPI.swift */,
 				306049D5709DE747602C0CEDCBECF5DB /* Support Files */,
 			);
 			name = WeatherAPI;
@@ -329,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBE477CE9A1C9D7857FCA81C24FBAAD4 /* ReplaceMe.swift in Sources */,
+				BBE477CE9A1C9D7857FCA81C24FBAAD4 /* WeatherAPI.swift in Sources */,
 				421E9A41A89B798363D75FAAE89D70BD /* WeatherAPI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
