@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WeatherAPI_Example' do
+  pod 'WeatherAPI', :path => '../'
+
+  target 'WeatherAPI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
