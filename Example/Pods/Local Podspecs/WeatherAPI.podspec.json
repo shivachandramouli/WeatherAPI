@@ -1,0 +1,22 @@
+{
+  "name": "WeatherAPI",
+  "version": "0.1.0",
+  "summary": "A short description of WeatherAPI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/shivachandramouli/WeatherAPI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shivachandramouli": "cshiva.in@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/shivachandramouli/WeatherAPI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WeatherAPI/Classes/**/*"
+}
