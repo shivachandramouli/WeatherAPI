@@ -1,6 +1,7 @@
 
 import UIKit
 
+//Connection type for the classification of Type of request
 public enum ConnectionType {
     
     case get
@@ -10,16 +11,27 @@ public enum ConnectionType {
     case image
 }
 
+/*
+    This class is responsible for making a service connection, it initiates a NSURLSession service request based on request
+ 
+    This class can download GET Request, POST request, and Image Request
+    In the case of Image requests, the app downloads an image and sends a UIImage back
+ */
+
 open class URLSessionManager: NSObject {
     
     
     class func request(_ connectionType: ConnectionType, url: String , data: Data, onSuccess: @escaping (AnyObject) -> Void, onError: @escaping(_ error: Error) -> Void) {
         
+        //Handles GET Request
         switch connectionType {
         case ConnectionType.get:
             
             let urlString = url as NSString
+            
+            //Encode the data
             let encodedUrl = urlString.addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed)
+            //Create the NSURLRequest
             let request = NSMutableURLRequest(url: URL(string: encodedUrl!)!)
             request.httpMethod = "GET"
             HTTPsendRequest(request, success: onSuccess, onError: onError)
@@ -27,15 +39,24 @@ open class URLSessionManager: NSObject {
         case ConnectionType.post:
             
             let urlString = url as NSString
+            //Encode the data
             let encodedUrl = urlString.addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed)
+            
+            //Create the NSURLRequest
             let request = NSMutableURLRequest(url: URL(string: encodedUrl!)!)
+            
             request.httpMethod = "POST"
+            
+            //Set HTTP Content Header fields
             request.addValue("application/json",forHTTPHeaderField: "Content-Type")
             request.addValue("application/json",forHTTPHeaderField: "Accept")
             request.httpBody = data
             HTTPsendRequest(request, success: onSuccess, onError: onError)
             
         case ConnectionType.put:
+            
+            //This method is not completed yet, there is no need for a PUT type for this project
+            //This needs to be expanded if there is a need for a put type
             break
             
         case ConnectionType.delete:
@@ -53,6 +74,7 @@ open class URLSessionManager: NSObject {
     }
     
     
+    //This function creates a URLSession and spans off a request to the incoming URL
     class func HTTPsendRequest(_ request: NSMutableURLRequest,
                                success: @escaping (AnyObject) -> Void, onError: @escaping (_ error: Error) -> Void) {
         let task = URLSession.shared
@@ -72,6 +94,7 @@ open class URLSessionManager: NSObject {
         task.resume()
     }
     
+    //This function creates a URLSession and spans off a request to the incoming URL, the success callback is a UIImage
     class func HTTPImageDownloadRequest(_ request: NSMutableURLRequest,
                                success: @escaping (UIImage) -> Void, onError: @escaping (_ error: Error) -> Void) {
         let task = URLSession.shared

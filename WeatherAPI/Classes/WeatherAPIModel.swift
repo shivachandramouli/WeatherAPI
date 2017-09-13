@@ -2,6 +2,9 @@
 
 import UIKit
 
+/*
+    Collection data that holds WeatherAPIModel
+ */
 public class WeatherAPIModel: NSObject {
 
     public var message: Double?
